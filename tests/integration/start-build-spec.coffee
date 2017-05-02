@@ -11,6 +11,8 @@ describe "startBuild", ->
     @config =
       username: process.env.CIRCLE_USER
       project: process.env.CIRCLE_PROJECT
+      vcsType: process.env.CIRCLE_VCSTYPE
+      vcsType: process.env.CIRCLE_VCSTYPE
       branch: process.env.CIRCLE_BRANCH or "master"
       body:
         parallel: null
